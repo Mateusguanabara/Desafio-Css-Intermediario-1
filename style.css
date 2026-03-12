@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+.menu{
+    height: 20px;
+    margin: 24px 26px 54px 20px;
+}
+
+.button-left {
+    height: 51px;
+    width: 124px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(64, 155, 56);
+    color: aliceblue;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-left:hover {
+    opacity: 0.8;
+}
+
+img {
+    width: 530px;
+    height: 460px;
+    margin-top: 70px;
+    margin-left: 121px;
+}
+
+.container-right {
+    margin: auto;
+}
+
+h1 {
+    font-size: 49px;
+    width: 582px;
+    line-height: 82px;
+    color: rgba(22, 26, 73, 1);
+}
+
+p {
+    width: 420px;
+    margin-top: 20px;
+    color: rgba(75, 80, 90, 1);
+}
+
+.button-rigth {
+    margin: 20px 9px;
+    width: 110px;
+    height: 45px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(64, 155, 56);
+    color: aliceblue;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.button-rigth:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 900px) {
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .container-right {
+        order: 1;
+        text-align: center;
+    }
+
+    .container-left {
+        order: 2;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .button-left {
+        background-color: rgba(40, 180, 47, 0.89);
+    }
+
+    .button-left:hover{
+        opacity: 1;
+        background: rgb(147, 219, 38);
+    }
+
+    .button-rigth {
+        background-color: rgba(40, 180, 47, 0.89);
+    }
+
+    .button-rigth:hover{
+        opacity: 1;
+        background: rgb(147, 219, 38);
+    }
+
+    h1 {
+        width: auto;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .menu a {
+        display: none;
+    }
+
+    .menu{
+        display: flex;
+        justify-content: right;
+    }
+}
